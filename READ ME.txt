@@ -1,0 +1,5 @@
+
+
+**primeiro rodar o arquivo sqlite-db.js
+
+**depois rodar o arquivo create_and_populate.js
