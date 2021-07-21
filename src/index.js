@@ -4,9 +4,11 @@ const porta = 3089
 
 const mostraCliente = require("./controller/cliente_controller")
 
+const db = require('./infra/sqlite-db')
+
 app.use(express.json())
 
-mostraCliente(app)
+mostraCliente(app, db)
 
 app.listen(porta, () => {
     console.log(`app listening at http://localhost:${porta}`)

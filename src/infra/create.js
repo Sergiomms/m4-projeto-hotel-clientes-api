@@ -7,9 +7,7 @@ CREATE TABLE IF NOT EXISTS "CLIENTES" (
     "NOME" varchar(64),
     "EMAIL" varchar(64),
     "CPF" varchar(11),
-    "QUARTO" VARCHAR(64),
-    "CHECK-IN" DATETIME(0),
-    "CHECK-OUT" DATETIME(0)
+    "QUARTO" VARCHAR(64)
   );`;
 
 function criarTblClientes(){
