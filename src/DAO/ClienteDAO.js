@@ -39,9 +39,9 @@ class ClienteDAO{
             })
         })
     }
-    deleteClientFromEmail(email){
+    deleteClientFromEmail(id){
         return new Promise((resolve, reject) =>{
-            this.db.all("DELETE FROM CLIENTES WHERE EMAIL = (?)", email, (err) =>{
+            this.db.all("DELETE FROM CLIENTES WHERE ID = (?)", id, (err) =>{
                 if(err){
                     reject(err)
                 }else{

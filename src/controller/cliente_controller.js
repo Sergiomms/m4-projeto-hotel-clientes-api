@@ -40,10 +40,10 @@ module.exports = (app, db) => {
             })
         }
     })
-    app.delete('/clientes/:email', async (request, response) =>{
+    app.delete('/clientes/:id', async (request, response) =>{
         try{
-        const email = request.params.email
-        let resposta = await clienteDb.deleteClientFromEmail(email)
+        const id = request.params.id
+        let resposta = await clienteDb.deleteClientFromEmail(id)
         response.json(resposta)
         }
         catch(err){
