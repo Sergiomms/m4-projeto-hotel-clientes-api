@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const porta = 3089
+const porta = process.env.PORT || 3089
 
 const mostraCliente = require("./controller/cliente_controller")
 

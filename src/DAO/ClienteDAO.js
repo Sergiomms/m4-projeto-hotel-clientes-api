@@ -9,18 +9,20 @@ class ClienteDAO{
                 if(err){
                     reject(err)
                 }else{
-                    resolve(rows)
+                    resolve({result:rows,
+                        count:rows.length})
                 }
             })
         })
     }
-    getClientFromEmail(email){
+    getClientFromEmail(id){
         return new Promise((resolve, reject) =>{
-            this.db.all("SELECT * FROM CLIENTES WHERE EMAIL = (?)", email, (err, rows) =>{
+            this.db.all("SELECT * FROM CLIENTES WHERE ID = (?)", id, (err, rows) =>{
                 if(err){
                     reject(err)
                 }else{
-                    resolve(rows)
+                    resolve({result:rows,
+                        count:rows.length})
                 }
             })
         })
@@ -31,7 +33,8 @@ class ClienteDAO{
                 if(err){
                     reject(err)
                 }else{
-                    resolve()
+                    resolve({message:"Cliente inserido com sucesso",
+                        Error:false})
                 }
             })
         })
@@ -42,7 +45,7 @@ class ClienteDAO{
                 if(err){
                     reject(err)
                 }else{
-                    resolve()
+                    resolve({message:"Cliente deletado com sucesso"})
                 }
             })
         })
@@ -83,7 +86,9 @@ class ClienteDAO{
                 if(err){
                     reject(err)
                 }else{
-                    resolve({Changes:changes})
+                    resolve({Changes:changes,
+                            Message:"Alteração realizada com sucesso"
+                    })
                 }
             })
         })
