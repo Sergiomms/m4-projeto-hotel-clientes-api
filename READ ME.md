@@ -93,6 +93,19 @@ Insira os dados que deseja alterar, podem ser todos ou apenas um com exceção d
 ```
 PUT http://localhost:3089/clientes/id
 ```
+<br>
+
+## Bibliotecas Utilizadas
+
+* Express (Para criar o servidor)
+* Sqlite3 (Banco de dados)
+
+## Bibliotecas utilizadas na parte de DEV
+
+* Nodemon (Atualização de servidor)
+
+
+
 
 
 
