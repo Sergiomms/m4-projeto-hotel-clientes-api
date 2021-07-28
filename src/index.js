@@ -13,5 +13,5 @@ app.use(cors())
 mostraCliente(app, db)
 
 app.listen(porta, () => {
-    console.log(`app listening at http://localhost:${porta}`)
+    console.log(`app listening at http://localhost:${porta}/clientes`)
 });
