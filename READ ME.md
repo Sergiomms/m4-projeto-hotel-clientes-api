@@ -34,7 +34,7 @@ Agora é só dar o comando ``` git clone ``` https://github.com/Sergiomms/m4-pro
 Ao terminar de fazer todo o download dos aqruivos abra a pasta em seu VS Code (ou IDE de preferencia), abra um novo terminal em seu VS Code e digite o comando:
 
 ```sh
-  $ npm install # instalando os pacotes
+  $ npm install
   ```
 <br>
 <br>
