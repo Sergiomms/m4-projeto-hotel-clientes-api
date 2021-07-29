@@ -99,6 +99,7 @@ PUT http://localhost:3089/clientes/id
 
 * Express (Para criar o servidor)
 * Sqlite3 (Banco de dados)
+* Cors
 
 ## Bibliotecas utilizadas na parte de DEV
 
